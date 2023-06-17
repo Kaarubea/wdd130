@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Rock+Salt&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #05668D   ;
+  --secondary-color: #028090 ;
+  --accent1-color: #02C39A;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Rock Salt", serif;
+  --paragraph-font: Merriweather, Helvetica, sans-serif;
+
+
+  --nav-link-color:#f0dfb2 ;
+  --nav-background-color: #eea70d;
+  --nav-hover-link-color: #eea70d;
+  --nav-hover-background-color: #f0dfb2;
+}
+
+body {
+  font: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--accent1-color);
+}
+
+p {
+  padding: 25px;
+
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
