@@ -46,7 +46,8 @@ p {
 
 main {
    grid-column: 2/3;
-   margin: 1rem;
+   margin: 1rem; 
+   
 }
 
 main img {
