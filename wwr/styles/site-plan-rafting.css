@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -9,7 +9,8 @@
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Rock Salt", serif;
-  --paragraph-font: Merriweather, Helvetica, sans-serif;
+  --paragraph-font:' Roboto', Arial, sans-serif;
+
 
 
   --nav-link-color:#f0dfb2 ;
@@ -38,6 +39,8 @@ header {
 
 p {
   padding: 25px;
+  font-family: var(--paragraph-font);
+
 
 }
 

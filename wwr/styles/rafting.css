@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* Reset styles */
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #1b6583   ;
+  --secondary-color: #028090 ;
+  --accent1-color: #02C39A;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Roboto";
+  --paragraph-font: 'Sans-serif', Helvetica;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--accent2-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 150px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+main {
+  padding: 50px;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero article {
+  background-color: rgba(107, 98, 233, 0.6);
+  color: #fff;
+  padding: 20px;
+  position: center;
+  bottom: 50px;
+  left: 50%;
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  
+
+}
+
+.hero article img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: left;
+    margin: 0 0 1rem 1rem;
+    
+
+}
+
+.hero article p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+section {
+  margin-top: 50px;
+}
+
+section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #05668D;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+section img {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #05668D;
+}
+
+footer {
+  background-color: #05668D;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer a a:hover{
+    text-decoration: underline;
+}
+
+.sociallinks a {
+  margin-left: 10px;
+}
+
+.sociallinks img {
+  width: 30px;
+}
