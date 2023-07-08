@@ -50,6 +50,10 @@ main {
 
 .hero {
   position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
 .hero img {
@@ -59,10 +63,11 @@ main {
 }
 
 .hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   font-size: 48px;
   font-weight: 700;
-  margin-top: 30px;
-  color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -70,26 +75,23 @@ main {
   background-color: rgba(107, 98, 233, 0.6);
   color: #fff;
   padding: 20px;
-  position: center;
+  position: absolute;
   bottom: 50px;
   left: 50%;
   max-width: 800px;
   width: 90%;
-  margin: auto;
-  
-
+  margin:  auto;
+  transform: translateX(-50%);
 }
 
 .hero article img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: left;
-    margin: 0 0 1rem 1rem;
-    
-
+  width: 150px;
+  height: auto;
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+  float: right;
+  margin: 0 0 1rem 1rem;
 }
 
 .hero article p {
