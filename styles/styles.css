@@ -81,7 +81,7 @@ aside img {
 aside h2 {
     position: absolute;
     left: 110px;
-    margin-top: 0;
+    margin-top: 0; 
     margin-bottom: 10px;
 }
 header, .grid, footer {
@@ -91,7 +91,6 @@ header, .grid, footer {
 footer {
 
     border-top: 1px solid #000;
-    text-align: center;
     position: relative;
 }
 
