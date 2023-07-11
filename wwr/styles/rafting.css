@@ -29,12 +29,19 @@ header {
   color: #fff;
   padding: 20px;
   display: flex;
+  grid-template-columns: auto 1fr;
   align-items: center;
   justify-content: space-between;
 }
 
 header img {
   width: 150px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
 }
 
 nav a {
@@ -101,12 +108,23 @@ main {
 
 section {
   margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  text-align: center;
 }
 
 section h1 {
   font-size: 36px;
   margin-bottom: 20px;
   color: #05668D;
+}
+section h2 {
+  font-size: 33px;
+  margin-bottom: 20px;
+  color: #080808;
+
 }
 
 section p {
@@ -128,6 +146,25 @@ section h3 {
   color: #05668D;
 }
 
+section figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section figure img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+section figcaption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #05668D;
+}
+
 footer {
   background-color: #05668D;
   color: #fff;
@@ -146,10 +183,13 @@ footer a a:hover{
 }
 
 .sociallinks a {
+  display: flex;
   margin-left: 10px;
   text-decoration: none;
+  align-items: center;
 }
 
 .sociallinks img {
   width: 30px;
+  height: 30px;
 }
