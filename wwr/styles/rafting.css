@@ -108,7 +108,7 @@ main {
 
 section {
   margin-top: 50px;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
   align-items: center;
@@ -130,6 +130,7 @@ section h2 {
 section p {
   font-size: 18px;
   line-height: 1.5;
+  display: flex;
 }
 
 section img {
