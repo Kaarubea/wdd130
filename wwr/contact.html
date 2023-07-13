@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <meta name="description" content="Kaarubea | WDD 130 | Water Rafting">
+    <title>Contact</title>
+    <meta name="description" content="Contact Dry Oar company">
     <meta name="author" content="Kaarubea Riben">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -28,18 +28,19 @@
     </header>
 
     <main>
-        <section class="company-info">
-            <h2>Company Information</h2>
+        <h1>Company Information</h1>
+
+            
             <p>Address: 123 Rafting Street, Adventureville</p>
             <p>Phone: +686 73006308</p>
             <p>Email: info@dryoar.com</p>
             <div id="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d107327.99064897376!2d173.0239438191302!3d1.4157823708590385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ski!4v1689222172917!5m2!1sen!2ski" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
 
+        <h1>Meet Our Team</h1>
         <section class="employee-profiles">
-            <h2>Meet Our Team</h2>
+            
             <figure>
                 <img src="images/Aribo.jpg" alt="Employee 1">
                 <figcaption>Aribo Kiaieta - Rafting Guide</figcaption>
@@ -53,26 +54,34 @@
                 <figcaption>Tabokai Kanoua - Customer Support</figcaption>
             </figure>
         </section>
-
+        <h1>Contact Us</h1>
         <section class="contact-form">
-            <h2>Contact Us</h2>
+           
             <form action="submit_form.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="first name">First Name:</label>
+                <input type="text" id="first name" name="first name" placeholder="First Name" required>
+                
+                <label for="last name">Last Name:</label>
+                <input type="text" id="last name" name="last name" placeholder="Last Name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="kaarubea@gmail.com" required>
 
                 <label for="purpose">Purpose of Message:</label>
-                <select id="purpose" name="purpose" required>
-                    <option value="General Inquiry">General Inquiry</option>
-                    <option value="Reservation Question">Reservation Question</option>
-                    <option value="Website Suggestion">Website Suggestion</option>
-                </select>
+                <input type="radio" id="generalInquiry" name="purpose" value="General Inquiry" required>
+                <label for="generalInquiry">General Inquiry</label>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <input type="radio" id="reservationQuestion" name="purpose" value="Reservation Question" required>
+                <label for="reservationQuestion">Reservation Question</label>
 
+                <input type="radio" id="websiteSuggestion" name="purpose" value="Website Suggestion" required>
+                <label for="websiteSuggestion">Website Suggestion</label>
+
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="type your message here" required>>></textarea>
+                </div>
                 <label for="newsletter">Subscribe me to the monthly newsletter:</label>
                 <input type="checkbox" id="newsletter" name="newsletter">
 
