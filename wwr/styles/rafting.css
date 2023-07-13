@@ -13,17 +13,26 @@
   --paragraph-font: 'Sans-serif', Helvetica;
 }
 
-* {
-  box-sizing: border-box;
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f2f2f2;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--accent2-color);
+h1, h2, h3 {
+  color: #333;
 }
 
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/*header css*/
 header {
   background-color: var(--primary-color);
   color: #fff;
@@ -50,114 +59,24 @@ nav a {
   margin-left: 15px;
 }
 
+/*main css*/
+
 main {
-  padding: 50px;
-  text-align: center;
-}
-
-.hero {
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-}
-
-.hero img {
-  width: 100%;
-  display: block;
-  height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 48px;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.hero article {
-  background-color: rgba(107, 98, 233, 0.6);
-  color: #fff;
   padding: 20px;
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  max-width: 800px;
-  width: 90%;
-  margin:  auto;
-  transform: translateX(-50%);
 }
 
-.hero article img {
-  width: 150px;
-  height: auto;
-  border: 1px solid steelblue;
-  padding: 2px;
-  box-shadow: 0 0 30px gray;
-  float: right;
-  margin: 0 0 1rem 1rem;
-}
-
-.hero article p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-section {
-  margin-top: 50px;
-  display: flex;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
-  align-items: center;
-  text-align: center;
-}
-
-section h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #05668D;
-}
-section h2 {
-  font-size: 33px;
-  margin-bottom: 20px;
-  color: #080808;
-
-}
-
-section p {
-  font-size: 18px;
-  line-height: 1.5;
-  display: flex;
-}
-
-section img {
-  width: 100%;
-  max-width: 600px;
-  margin: 30px 0;
+.company-info {
+  background-color: #fff;
+  padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-section h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #05668D;
-}
-
-section figure {
+.employee-profiles {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-section figure img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 section figcaption {
@@ -166,31 +85,90 @@ section figcaption {
   color: #05668D;
 }
 
-footer {
-  background-color: #05668D;
-  color: #fff;
+.employee-profiles figure {
+  margin: 10px;
+  text-align: center;
+}
+
+.employee-profiles img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.employee-profiles figcaption {
+  margin-top: 10px;
+}
+
+.contact-form {
+  background-color: #fff;
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
 }
 
-footer p {
-  font-size: 14px;
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-footer a a:hover{
-    text-decoration: underline;
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
-.sociallinks a {
-  display: flex;
-  margin-left: 10px;
-  text-decoration: none;
-  align-items: center;
+.contact-form textarea {
+  height: 150px;
 }
 
-.sociallinks img {
-  width: 30px;
-  height: 30px;
+.contact-form input[type="checkbox"] {
+  margin-top: 10px;
 }
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+  /*footer */
+  footer {
+    background-color: #05668D;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  footer a a:hover{
+      text-decoration: underline;
+  }
+  
+  .sociallinks a {
+    display: flex;
+    margin-left: 10px;
+    text-decoration: none;
+    align-items: center;
+  }
+  
+  .sociallinks img {
+    width: 30px;
+    height: 30px;
+  }
