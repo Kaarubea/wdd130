@@ -179,12 +179,6 @@ main {
   margin-top: 30px;
 }
 
-section figcaption {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #05668D;
-}
-
 .employee-profiles figure {
   margin: 10px;
   text-align: center;
@@ -266,4 +260,15 @@ section figcaption {
   .sociallinks img {
     width: 30px;
     height: 30px;
+  }
+
+  .trip p, p {
+    font-size: 18px;
+    line-height: 1.5;
+  } 
+
+  .trip img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
   }
