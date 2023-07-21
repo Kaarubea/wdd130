@@ -275,3 +275,7 @@ main {
   .return a {
     color: #fff;
   }
+
+  .cta button {
+    color: #028090;
+  }
