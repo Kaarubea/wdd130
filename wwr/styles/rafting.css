@@ -248,6 +248,10 @@ main {
     justify-content: space-between;
     align-items: center;
   }
+
+  footer a {
+    color: #ccc;
+  }
   
   footer p {
     font-size: 14px;
