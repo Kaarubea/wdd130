@@ -62,7 +62,7 @@ nav a {
 
 section {
   margin-top: 50px;
-  display: flex;
+  display: contents;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
   align-items: center;
@@ -103,9 +103,15 @@ section figure img {
 }
 
 section figcaption {
-  margin-top: 10px;
+  margin-top: -34px;
   font-size: 16px;
   color: #05668D;
+}
+
+.rivers {
+  display: flex;
+  margin-top: -34px;
+
 }
 
 .hero {
@@ -114,6 +120,7 @@ section figcaption {
   background-size: cover;
   background-position: center;
   color: #fff;
+
 }
 
 .hero img {
@@ -277,5 +284,5 @@ main {
   }
 
   .cta button {
-    color: #028090;
+    color: #010505;
   }
